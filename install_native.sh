@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "Installing PX4 Native Toolchain for Raspberry Pi"
 echo "======================================================="
-sudo apt-get update && apt-get upgrade
+sudo apt-get update && apt-get -y upgrade
 
 dpkg -i packages/*.deb
 sudo rm /usr/bin/cpp /usr/bin/gcc /usr/bin/g++
