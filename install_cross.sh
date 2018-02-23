@@ -37,8 +37,6 @@ if grep -Fxq "$exportline" ~/.profile; then echo 'Already installed' ; else echo
 echo -e "Cleaning up\n"
 rm -rf rpi_toolchain
 
-$TOOLCHAIN_DIR/gcc-linaro-arm-linux-gnueabihf-raspbian/bin/arm-linux-gnueabihf-gcc --version
-
 if [ $? -eq 0 ]; then
     echo -e "Install complete"
     exit 0
